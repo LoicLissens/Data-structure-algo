@@ -16,9 +16,6 @@ const compute = (a:number,b:number,op:string): number =>{
         const b = stack.pop() as number
         const a =  stack.pop() as number
         const res =  compute(a,b,char)
-        console.log({
-          a,b,res
-        })
         stack.push(res)
       }
     }
