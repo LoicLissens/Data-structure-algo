@@ -1,17 +1,17 @@
 def solution(args):
     out = []
-    beg = end = args[0]
+    a = b = args[0]
 
-    for n in args[1:] + [""]:
-        if n != end + 1:
-            if end == beg:
-                out.append(str(beg))
-            elif end == beg + 1:
-                out.extend([str(beg), str(end)])
+    for n in args[1:] + [None]:
+        if n != b + 1:
+            if b == a:
+                out.append(str(a))
+            elif b == a + 1:
+                out.extend([str(a), str(b)])
             else:
-                out.append(str(beg) + "-" + str(end))
-            beg = n
-        end = n
+                out.append(str(a) + "-" + str(b))
+            a = n
+        b = n
 
     return ",".join(out)
 
