@@ -1,8 +1,8 @@
-from typing import Union,TypeVar
+from typing import Union,TypeVar, Generic
 
 T = TypeVar('T')
 
-class Stack:
+class Stack(Generic[T]):
     def __init__(self):
         self._count = 0
         self.storage: dict[int,T] =  {}
@@ -31,7 +31,7 @@ class Stack:
 def main():
     pal = "racecar"
     new_str = ""
-    my_stack =  Stack()
+    my_stack =  Stack[str]()
     for char in pal:
         my_stack.push(char)
     print(my_stack.length) #7

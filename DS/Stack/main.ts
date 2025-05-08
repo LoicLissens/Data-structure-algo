@@ -33,7 +33,7 @@ class Stack<T> implements IStack<T> {
 function main(){
     const pal = "racecar"
     let newStr = ""
-    const stack = new Stack()
+    const stack = new Stack<string>()
     for (const char of pal){
         stack.push(char)
     }
