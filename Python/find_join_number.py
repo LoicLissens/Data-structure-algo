@@ -1,5 +1,5 @@
 # Assuming that s1 and s2 will always bet positive integer, the main goal is to implement a function
-# that take this number  add decomposite and add it to this same number (eg: 517 will be 5+1+7 + 516)
+# that take this number add decomposite and add it to this same number (eg: 517 will be 5+1+7 + 517)
 # untill find a commun number (join number) to these two numbers (they will always have one)
 
 

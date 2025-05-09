@@ -1,4 +1,6 @@
-# FIFO (First In First Out)
+# Stack
+ element are LIFO (Last In First Out)
+
 ## Implementation
 Should have methods :
 - pop() : remove element remove and return the top element of the stack

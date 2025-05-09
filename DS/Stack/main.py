@@ -10,7 +10,7 @@ class Stack(Generic[T]):
     @property
     def length(self)-> int:
         return self._count
-
+    @staticmethod
     def pop(self) -> Union[T,None]:
         if self._count == 0:
             return None
