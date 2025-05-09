@@ -95,6 +95,7 @@ func values[T comparable](s ISet[T]) []T {
 	})
 	return result
 }
+
 func main() {
 	setOne := make(Set[int])
 	setTwo := make(Set[int])

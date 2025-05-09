@@ -66,7 +66,6 @@ class CustomSet<T> implements ISet<T> {
 // Opti for perf
 // Main improvment comes from the use of a map (bettwer for lookup add and remove, we don't have to use indexOf which is costly)
 // Map (over object) can have any type as key, has .size builtin prop, order is preserved, for intensive add/rem it's more opti
-// to f
 class PerfCustomSet<T> implements ISet<T> {
     private _map: Map<string, T>;
     private _toKey: (item: T) => string;
@@ -188,7 +187,7 @@ function main() {
     console.log(setThree.size); // 1
     console.log(setThree.values); // [1]
     const setFour = setOne.union(setTwo)
-    console.log(setFour.size); //3G
+    console.log(setFour.size); //3
     console.log(setFour.values); // [1,2,3]
     console.log(setOne.subset(setFour)); // true
     setOne.add(5) // now [1,5]
